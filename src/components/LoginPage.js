@@ -7,6 +7,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   function validateForm() {
+
     return email.length > 0 && password.length > 0;
   }
 
@@ -15,16 +16,7 @@ export default function Login() {
   }
 
   return (
-    <div className="Login">
-        <div className="search-box">
-          <input 
-            type="text"
-            className="search-bar"
-            placeholder="Search..."
-            onChange={e => (e.target.value)}
-          
-          />
-         </div>
+    <div className="login">
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email" bsSize="large">
           <FormLabel>Email</FormLabel>
